@@ -16,7 +16,7 @@ import java.io.*;
 import java.net.URL;
 
 public class Load {
-    public void fromXML() {
+    public TestCaseData fromXML() {
         try {
             XMLInputFactory factory = XMLInputFactory.newInstance();
             StreamSource reportStream = new StreamSource(new URL("file:///C:/Users/raina/Desktop/Generated.xml").openStream());
@@ -28,12 +28,16 @@ public class Load {
 
             JSONObject json = XML.toJSONObject(stringWriter.toString());
 
-            Gson gson = new Gson();
-            Root report = gson.fromJson(json.toString(4), (new TypeToken<Root>() {}).getType());
+            String spiraData = json.toString(4).replaceAll("\"TestSteps\": \"\"", "\"TestSteps\": null");
 
-            System.out.println(report);
+            Gson gson = new Gson();
+            Root report = gson.fromJson(spiraData, (new TypeToken<Root>() {}).getType());
+
+            return report.report.testCaseData;
+
         } catch (Exception e) {
             e.printStackTrace();
+            return null;
         }
     }
 }

@@ -4,23 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f71854a-b8dd-49a2-a9b1-d426f6de1a12" name="Changes" comment="Initial configuration">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/Migrate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/data/Load.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/report/CustomProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/report/CustomProperty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/report/Project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/report/ProjectData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/report/Report.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/report/Root.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/report/TestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/report/TestCaseData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/report/TestStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/report/TestSteps.java" afterDir="false" />
+    <list default="true" id="6f71854a-b8dd-49a2-a9b1-d426f6de1a12" name="Changes" comment="XML mapping done">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Execute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Transfer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Attachment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/CreateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Fields.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Jira.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/TestStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/TestType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/Migrate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/Migrate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/data/Load.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/data/Load.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/report/TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/report/TestCase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,20 +106,38 @@
       <option name="project" value="LOCAL" />
       <updated>1680589300195</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="XML mapping done">
+      <created>1680668260542</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680668260543</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial configuration" />
+    <MESSAGE value="XML mapping done" />
+    <option name="LAST_COMMIT_MESSAGE" value="XML mapping done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/data/Load.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/lenze/qa/Migrate.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Transfer.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Transfer.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -132,9 +148,9 @@
     </pin-to-top-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="xmlStream.readAllBytes().toString()" />
-        <watch expression="spiraReportReader" />
-        <watch expression="spiraReportReader.toString()" />
+        <watch expression="&quot;{\&quot;query\&quot;:\&quot;&quot; + createTestData + &quot;\&quot;,\&quot;variables\&quot;:{}}&quot;" />
+        <watch expression="createTestData" />
+        <watch expression="json.toString(4)" />
       </configuration>
     </watches-manager>
   </component>

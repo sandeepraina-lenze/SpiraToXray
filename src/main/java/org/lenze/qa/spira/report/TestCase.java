@@ -118,7 +118,7 @@ public class TestCase{
     @SerializedName("TestCasePriorityName")
     public String testCasePriorityName;
     @SerializedName("TestSteps")
-    public Object testSteps;
+    public TestSteps testSteps;
     @SerializedName("ProjectId")
     public int projectId;
     @SerializedName("Custom_01")
