@@ -1,11 +1,14 @@
 package org.lenze.qa.xray.graphql;
 
 import com.google.gson.Gson;
+import org.lenze.qa.properties.XRayProperties;
 import org.lenze.qa.spira.report.TestCase;
 import org.lenze.qa.xray.map.Attachment;
+import org.lenze.qa.xray.map.Content;
 import org.lenze.qa.xray.map.CreateTest;
 import org.lenze.qa.xray.map.TestStep;
 
+import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -16,8 +19,22 @@ public class Transfer {
         CreateTest createTest = new CreateTest();
 
         createTest.testType.name = "Manual";
+        createTest.jira.fields.project.key = XRayProperties.jiraProjectKey;
+        createTest.jira.fields.summary = testCase.name.replaceAll("\\<.*?\\>", "").replaceAll("&nbsp;", "");
 
-        String summary = testCase.name.replaceAll("\\<.*?\\>", "").replaceAll("&nbsp;", "");
+//        Content innerContent = new Content();
+        createTest.jira.fields.description = testCase.description.replaceAll("\\<.*?\\>", "").replaceAll("&nbsp;", "");
+//        innerContent.type = "text";
+//
+//        Content outerContent = new Content();
+//        outerContent.type = "paragraph";
+//        outerContent.content = new ArrayList<Content>();
+//        outerContent.content.add(innerContent);
+//
+//        createTest.jira.fields.description.type = "doc";
+//        createTest.jira.fields.description.version = 1;
+//        createTest.jira.fields.description.content = new ArrayList<Content>();
+//        createTest.jira.fields.description.content.add(outerContent);
 
         for (org.lenze.qa.spira.report.TestStep testStep : testCase.testSteps.testStep) {
             String s1 = testStep.description;
@@ -48,9 +65,6 @@ public class Transfer {
             }
         }
 
-        createTest.jira.fields.project.key = "XS";
-        createTest.jira.fields.summary = summary;
-
         Gson gson = new Gson();
         String createTestData = gson.toJson(createTest);
 
@@ -67,7 +81,7 @@ public class Transfer {
         createTestData = createTestData + " data ";
         createTestData = createTestData + " result ";
         createTestData = createTestData + " } ";
-        createTestData = createTestData + " jira(fields: [\"key\"]) ";
+        createTestData = createTestData + " jira(fields: [\"key\" \"description\"]) ";
         createTestData = createTestData + " } ";
         createTestData = createTestData + " warnings ";
         createTestData = createTestData + " } ";

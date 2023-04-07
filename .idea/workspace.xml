@@ -4,21 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f71854a-b8dd-49a2-a9b1-d426f6de1a12" name="Changes" comment="XML mapping done">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Execute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Transfer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Attachment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/CreateTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Fields.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Jira.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/TestStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/TestType.java" afterDir="false" />
+    <list default="true" id="6f71854a-b8dd-49a2-a9b1-d426f6de1a12" name="Changes" comment="GraphQL query execution implemented">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/properties/XRayProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Authenticate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Content.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Description.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/Migrate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/Migrate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/data/Load.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/data/Load.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/report/TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/report/TestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Execute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Execute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Transfer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Fields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Fields.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,31 +110,39 @@
       <option name="project" value="LOCAL" />
       <updated>1680668260543</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="GraphQL query execution implemented">
+      <created>1680758133984</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680758133985</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial configuration" />
     <MESSAGE value="XML mapping done" />
-    <option name="LAST_COMMIT_MESSAGE" value="XML mapping done" />
+    <MESSAGE value="GraphQL query execution implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="GraphQL query execution implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/lenze/qa/Migrate.java</url>
-          <line>19</line>
+          <line>27</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Transfer.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="20" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Execute.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Transfer.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="21" />
+          <line>25</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -151,6 +156,8 @@
         <watch expression="&quot;{\&quot;query\&quot;:\&quot;&quot; + createTestData + &quot;\&quot;,\&quot;variables\&quot;:{}}&quot;" />
         <watch expression="createTestData" />
         <watch expression="json.toString(4)" />
+        <watch expression="mutuationQuery" />
+        <watch expression="innerContent.text" />
       </configuration>
     </watches-manager>
   </component>

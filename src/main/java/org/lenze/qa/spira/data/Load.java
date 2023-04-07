@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import org.json.JSONObject;
 import org.json.XML;
+import org.lenze.qa.properties.XRayProperties;
 import org.lenze.qa.spira.report.*;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamReader;
@@ -19,7 +20,7 @@ public class Load {
     public TestCaseData fromXML() {
         try {
             XMLInputFactory factory = XMLInputFactory.newInstance();
-            StreamSource reportStream = new StreamSource(new URL("file:///C:/Users/raina/Desktop/Generated.xml").openStream());
+            StreamSource reportStream = new StreamSource(new URL(XRayProperties.spiraXMLFile).openStream());
             XMLStreamReader spiraReportReader = factory.createXMLStreamReader(reportStream);
 
             Transformer transformer = TransformerFactory.newInstance().newTransformer();
