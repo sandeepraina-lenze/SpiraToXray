@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f71854a-b8dd-49a2-a9b1-d426f6de1a12" name="Changes" comment="XML mapping done">
+    <list default="true" id="6f71854a-b8dd-49a2-a9b1-d426f6de1a12" name="Changes" comment="GraphQL query execution implemented">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/properties/XRayProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Authenticate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Content.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Description.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/Migrate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/Migrate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/data/Load.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/data/Load.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Execute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Execute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Transfer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Fields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Fields.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,10 +36,10 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="2Nwxj9QrP0CPbiCMjCxfTUFWGI2" />
@@ -40,19 +50,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.lenze.qa" />
@@ -101,31 +110,39 @@
       <option name="project" value="LOCAL" />
       <updated>1680668260543</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="GraphQL query execution implemented">
+      <created>1680758133984</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680758133985</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial configuration" />
     <MESSAGE value="XML mapping done" />
-    <option name="LAST_COMMIT_MESSAGE" value="XML mapping done" />
+    <MESSAGE value="GraphQL query execution implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="GraphQL query execution implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/lenze/qa/Migrate.java</url>
-          <line>19</line>
+          <line>27</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Transfer.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="20" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Execute.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Transfer.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="21" />
+          <line>25</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -139,6 +156,8 @@
         <watch expression="&quot;{\&quot;query\&quot;:\&quot;&quot; + createTestData + &quot;\&quot;,\&quot;variables\&quot;:{}}&quot;" />
         <watch expression="createTestData" />
         <watch expression="json.toString(4)" />
+        <watch expression="mutuationQuery" />
+        <watch expression="innerContent.text" />
       </configuration>
     </watches-manager>
   </component>

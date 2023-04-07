@@ -1,15 +1,19 @@
 package org.lenze.qa;
 
+import org.lenze.qa.properties.XRayProperties;
 import org.lenze.qa.spira.data.Load;
 import org.lenze.qa.spira.report.TestCase;
 import org.lenze.qa.spira.report.TestCaseData;
 import org.lenze.qa.spira.report.TestSteps;
 import org.lenze.qa.xray.graphql.Execute;
+import org.lenze.qa.xray.graphql.Token;
 import org.lenze.qa.xray.graphql.Transfer;
 
 public class Migrate {
     public static void main(String[] args) {
         TestCaseData spiraTestCaseData = (new Load()).fromXML();
+
+        (new Token()).Generate(XRayProperties.clientID, XRayProperties.clientSecret);
 
         //XRay cloud client ID and Secret needs to be created manually in the system
         //If JIRA is installed and mainatined locally as a server in the organization then use RestAPI calls instead of graphql
