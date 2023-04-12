@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f71854a-b8dd-49a2-a9b1-d426f6de1a12" name="Changes" comment="GraphQL query execution implemented">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/properties/XRayProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Token.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Authenticate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Content.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Description.java" afterDir="false" />
+    <list default="true" id="6f71854a-b8dd-49a2-a9b1-d426f6de1a12" name="Changes" comment="Dynamic properties implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/Migrate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/Migrate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/data/Load.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/data/Load.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Execute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Execute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Transfer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Fields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/map/Fields.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +28,11 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="workspaceImportEnabled" value="true" />
@@ -59,7 +56,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+    "settings.editor.selected.configurable": "http.proxy"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -117,32 +114,46 @@
       <option name="project" value="LOCAL" />
       <updated>1680758133985</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Dynamic properties implemented">
+      <created>1680861477741</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680861477741</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial configuration" />
     <MESSAGE value="XML mapping done" />
     <MESSAGE value="GraphQL query execution implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="GraphQL query execution implemented" />
+    <MESSAGE value="Dynamic properties implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dynamic properties implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/lenze/qa/Migrate.java</url>
-          <line>27</line>
+          <line>25</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Execute.java</url>
           <line>19</line>
           <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Transfer.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -160,5 +171,9 @@
         <watch expression="innerContent.text" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
