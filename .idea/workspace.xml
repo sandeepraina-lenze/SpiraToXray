@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f71854a-b8dd-49a2-a9b1-d426f6de1a12" name="Changes" comment="Dynamic properties implemented">
+    <list default="true" id="6f71854a-b8dd-49a2-a9b1-d426f6de1a12" name="Changes" comment="Plugins to create executable added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/Migrate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/Migrate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/data/Load.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/data/Load.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +67,7 @@
     <configuration name="Migrate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.lenze.qa.Migrate" />
       <module name="SpiraToXray" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;MLD&quot; &quot;2326D2A66FE14A1797024AE4424A2808&quot; &quot;e266fc9e5221d51e540d79a591d5d3c16d6351e7618e6aa1ff516629bfe59602&quot; &quot;file:///$PROJECT_DIR$/../../../../../SPIRA/Generated.aspx.xml&quot;" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.lenze.qa.*" />
@@ -121,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680861477741</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Plugins to create executable added">
+      <created>1681325328239</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681325328239</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,20 +147,31 @@
     <MESSAGE value="XML mapping done" />
     <MESSAGE value="GraphQL query execution implemented" />
     <MESSAGE value="Dynamic properties implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dynamic properties implemented" />
+    <MESSAGE value="Plugins to create executable added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Plugins to create executable added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/lenze/qa/Migrate.java</url>
-          <line>25</line>
+          <line>37</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Execute.java</url>
           <line>19</line>
           <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/lenze/qa/Migrate.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/data/Load.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -169,6 +187,8 @@
         <watch expression="json.toString(4)" />
         <watch expression="mutuationQuery" />
         <watch expression="innerContent.text" />
+        <watch expression="spiraData" />
+        <watch expression="xmlData" />
       </configuration>
     </watches-manager>
   </component>

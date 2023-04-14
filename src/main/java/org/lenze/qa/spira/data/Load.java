@@ -27,9 +27,18 @@ public class Load {
             StringWriter stringWriter = new StringWriter();
             transformer.transform(new StAXSource(spiraReportReader), new StreamResult(stringWriter));
 
-            JSONObject json = XML.toJSONObject(stringWriter.toString());
+            String xmlData = stringWriter.toString();
+            xmlData = xmlData.replaceAll("</TestStep></TestSteps>", "</TestStep><TestStep /></TestSteps>");
 
-            String spiraData = json.toString(4).replaceAll("\"TestSteps\": \"\"", "\"TestSteps\": null");
+            JSONObject json = XML.toJSONObject(xmlData);
+
+
+            String spiraData = json.toString(4).replaceAll("\"TestSteps\": \"\"", "\"TestSteps\": null").replaceAll("\"CustomProperties\": \"\"", "\"CustomProperties\": null");
+
+            spiraData = spiraData.replaceAll("},\n" +
+                    "                \"\"\n" +
+                    "            ]", "}\n" +
+                    "            ]");
 
             Gson gson = new Gson();
             Root report = gson.fromJson(spiraData, (new TypeToken<Root>() {}).getType());

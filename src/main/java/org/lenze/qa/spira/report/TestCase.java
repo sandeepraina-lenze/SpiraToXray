@@ -16,7 +16,7 @@ public class TestCase{
     @SerializedName("ConcurrencyDate")
     public String concurrencyDate;
     @SerializedName("Discussions")
-    public String discussions;
+    public Object discussions;
     @SerializedName("AttachmentsYn")
     public String attachmentsYn;
     @SerializedName("IndentLevel")
