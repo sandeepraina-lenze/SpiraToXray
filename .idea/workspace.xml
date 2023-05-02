@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f71854a-b8dd-49a2-a9b1-d426f6de1a12" name="Changes" comment="Plugins to create executable added">
+    <list default="true" id="6f71854a-b8dd-49a2-a9b1-d426f6de1a12" name="Changes" comment="XML mapping updated">
+      <change afterPath="$PROJECT_DIR$/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/data/Load.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/spira/data/Load.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/Migrate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/Migrate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/properties/XRayProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/properties/XRayProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Execute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lenze/qa/xray/graphql/Execute.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681325328239</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="XML mapping updated">
+      <created>1681479362283</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681479362284</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,14 +158,15 @@
     <MESSAGE value="GraphQL query execution implemented" />
     <MESSAGE value="Dynamic properties implemented" />
     <MESSAGE value="Plugins to create executable added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Plugins to create executable added" />
+    <MESSAGE value="XML mapping updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="XML mapping updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/lenze/qa/Migrate.java</url>
-          <line>37</line>
+          <line>39</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -165,7 +176,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/lenze/qa/Migrate.java</url>
-          <line>26</line>
+          <line>28</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

@@ -9,6 +9,8 @@ import org.lenze.qa.xray.graphql.Execute;
 import org.lenze.qa.xray.graphql.Token;
 import org.lenze.qa.xray.graphql.Transfer;
 
+import java.io.IOException;
+
 import static java.lang.System.exit;
 
 public class Migrate {
@@ -39,6 +41,10 @@ public class Migrate {
            }
         }
 
-
+        try {
+            XRayProperties.writeLog.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

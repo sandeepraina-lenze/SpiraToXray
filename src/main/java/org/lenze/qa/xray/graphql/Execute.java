@@ -26,7 +26,15 @@ public class Execute {
 
         try {
             Response response = client.newCall(request).execute();
-            System.out.println(response.body().string());
+            String currentResponse = response.body().string();
+
+            if (response.code() != 200) {
+                XRayProperties.writeLog.write(graphqlQuery + "\r\n");
+                XRayProperties.writeLog.write(currentResponse + "\r\n");
+                XRayProperties.writeLog.flush();
+            }
+
+            System.out.println(currentResponse);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
